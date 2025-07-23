@@ -7,4 +7,6 @@
 IMAGE_NAME=${1:-dev-image}
 CONTAINER_NAME=${2:-dev-container}
 
-docker run -it --name "$CONTAINER_NAME" "$IMAGE_NAME"
+# Run the container in the background so you can exec into it later
+# with shell.sh. "sleep infinity" keeps the container running.
+docker run -d --name "$CONTAINER_NAME" "$IMAGE_NAME" sleep infinity
