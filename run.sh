@@ -8,3 +8,4 @@ CONTAINER_NAME=${1:-dev-container}
 # Start the container and attach to it. When you exit the shell, the
 # container will stop automatically.
 docker start -ai "$CONTAINER_NAME"
+

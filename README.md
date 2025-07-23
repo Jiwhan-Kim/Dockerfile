@@ -3,6 +3,7 @@ This repository provides a simple Dockerfile for a development
 environment capable of compiling C/C++ programs and running Python.
 Neovim is installed but not launched automatically.
 
+
 ### Usage
 
 1. Build the Docker image:
@@ -25,4 +26,5 @@ Neovim is installed but not launched automatically.
 
 When you exit the shell the container stops. Run `./run.sh` again to
 re-enter it. By default the scripts use `dev-image` for the image
+
 name and `dev-container` for the container name.
